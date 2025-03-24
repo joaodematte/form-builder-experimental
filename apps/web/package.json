@@ -10,9 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dnd-kit/abstract": "^0.0.10-beta-20250219015925",
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/dom": "^0.0.10-beta-20250219015925",
+    "@dnd-kit/react": "^0.0.10-beta-20250219015925",
+    "@fontsource/arimo": "^5.2.5",
     "@neomind/ui": "*",
+    "@tailwindcss/vite": "^4.0.15",
+    "babel-plugin-react-compiler": "^19.0.0-beta-3229e95-20250315",
+    "jotai": "^2.12.2",
+    "lucide-react": "^0.483.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.15",
+    "tw-animate-css": "^1.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
@@ -20,6 +31,7 @@
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.21.0",
+    "eslint-plugin-react-compiler": "^19.0.0-beta-3229e95-20250315",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",

@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@import '@neomind/ui/tokens.css';
+
+@source "../../../../packages/ui";
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground h-dvh w-full font-sans text-base;
+  }
+
+  #root {
+    @apply flex h-full w-full flex-col;
+  }
+
+  [data-dnd-overlay='true'] {
+    --dnd-transition: none !important;
+  }
+
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+}
