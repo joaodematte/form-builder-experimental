@@ -36,7 +36,7 @@ function GridDroppableItem({ id, x, y }: GridDroppableItemProps) {
   });
 
   return (
-    <div ref={droppableRef} className="text-bold flex items-center justify-center rounded-md bg-zinc-100 opacity-25">
+    <div ref={droppableRef} className="text-bold flex items-center justify-center rounded-sm bg-zinc-100 opacity-25">
       {id}
     </div>
   );
@@ -70,7 +70,6 @@ function GridItem({ id, x, y, w, h, config }: GridItemProps) {
   const style: React.CSSProperties = {
     width: COL_WIDTH * w + (w - 1) * 16,
     height: ROW_HEIGHT * h + (h - 1) * 16,
-    transition: 'top 300ms cubic-bezier(0.34, 1.56, 0.64, 1), left 300ms cubic-bezier(0.34, 1.56, 0.64, 1)',
     top: verticalPosition,
     left: horizontalPosition
   };
@@ -79,7 +78,7 @@ function GridItem({ id, x, y, w, h, config }: GridItemProps) {
     <div
       ref={composedRefs}
       className={cn(
-        'text-bold absolute flex cursor-grab items-center justify-center rounded-md',
+        'text-bold absolute flex cursor-grab items-center justify-center rounded-sm',
         isDragging ? 'border border-dashed border-sky-500 bg-sky-200 outline-none' : 'bg-zinc-300'
       )}
       style={style}

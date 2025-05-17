@@ -21,9 +21,4 @@
   [data-dnd-overlay='true'] {
     --dnd-transition: none !important;
   }
-
-  button:not(:disabled),
-  [role='button']:not(:disabled) {
-    cursor: pointer;
-  }
 }

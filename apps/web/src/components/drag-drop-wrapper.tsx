@@ -4,7 +4,6 @@ import { useRef } from 'react';
 
 import { activeDraggableItemAtom } from '@/atoms/active-draggable-item';
 import { layoutAtom, LayoutItem } from '@/atoms/layout';
-import { sidebarAtom } from '@/atoms/sidebar';
 import { DragOverlay } from '@/components/drag-overlay';
 import { findItemById } from '@/lib/grid';
 import { DraggableData, DroppableData } from '@/types';
@@ -15,7 +14,6 @@ interface DragDropWrapperProps {
 
 export function DragDropWrapper({ children }: DragDropWrapperProps) {
   const [layout, setLayout] = useAtom(layoutAtom);
-  const [sidebar, setSidebar] = useAtom(sidebarAtom);
   const setActiveDraggableItem = useSetAtom(activeDraggableItemAtom);
 
   const addedRef = useRef<boolean>(false);
@@ -39,13 +37,6 @@ export function DragDropWrapper({ children }: DragDropWrapperProps) {
         const updatedLayout = layout.filter((item) => item.id !== sourceData.id);
 
         setLayout(updatedLayout);
-        setSidebar(
-          sidebar.map((sidebarItem) =>
-            sidebarItem.id === sourceData.id
-              ? { ...sidebarItem, config: { ...sidebarItem.config, added: false } }
-              : sidebarItem
-          )
-        );
 
         addedRef.current = false;
       }
@@ -85,13 +76,6 @@ export function DragDropWrapper({ children }: DragDropWrapperProps) {
         const updatedLayout = [...layout, newItem];
 
         setLayout(updatedLayout);
-        setSidebar(
-          sidebar.map((sidebarItem) =>
-            sidebarItem.id === sourceData.id
-              ? { ...sidebarItem, config: { ...sidebarItem.config, added: true } }
-              : sidebarItem
-          )
-        );
 
         addedRef.current = true;
       }

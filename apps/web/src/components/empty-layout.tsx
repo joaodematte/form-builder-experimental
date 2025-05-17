@@ -4,7 +4,7 @@ import { Button } from '@neomind/ui/button';
 
 export function EmptyLayout() {
   return (
-    <div className="border-border grid h-full w-full place-content-center rounded-md border border-dashed bg-zinc-100 text-center">
+    <div className="border-border grid h-full w-full place-content-center rounded-sm border border-dashed bg-zinc-100 text-center">
       <div className="flex w-full max-w-md flex-col items-center gap-4 text-zinc-400">
         <p className="font-bold">Este layout está vazio</p>
         <p className="text-sm">

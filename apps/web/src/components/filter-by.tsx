@@ -26,12 +26,12 @@ export function FilterBy() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="focus-visible:border-ring focus-visible:ring-ring/50 flex gap-1 transition-all outline-none focus-visible:ring-[2px]">
+      <DropdownMenuTrigger className="focus-visible:border-ring focus-visible:ring-ring/50 flex gap-1 outline-none focus-visible:ring-[2px]">
         <span className="flex items-center gap-1 font-bold">
           {FILTER_KEYS[filter]} <ChevronDown className="size-3" strokeWidth={3} />
         </span>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent align="start">
         <DropdownMenuRadioGroup value={filter} onValueChange={handleOnChange}>
           <DropdownMenuRadioItem value="all">Todos</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="available">Disponíveis</DropdownMenuRadioItem>

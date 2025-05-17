@@ -13,14 +13,14 @@ function TitleInput() {
   };
 
   return (
-    <TooltipProvider delayDuration={0}>
-      <Tooltip>
+    <TooltipProvider>
+      <Tooltip delayDuration={0}>
         <TooltipTrigger asChild>
           <div className="relative">
             <input
               type="text"
               placeholder="Renomear layout"
-              className="focus-visible:border-ring hover:border-ring text-primary-foreground -ml-2 field-sizing-content max-w-md min-w-48 truncate rounded px-2 py-1.5 font-bold outline-0 transition-all outline-solid hover:ring-[2px] hover:ring-black/50 focus-visible:bg-black/25 focus-visible:ring-[2px] focus-visible:ring-black/50"
+              className="focus-visible:border-ring hover:border-ring text-primary-foreground -ml-2 field-sizing-content max-w-md min-w-48 truncate rounded px-2 py-1.5 font-bold outline-0 outline-solid hover:ring-[2px] hover:ring-black/50 focus-visible:bg-black/25 focus-visible:ring-[2px] focus-visible:ring-black/50"
               value={value}
               onChange={handleOnChange}
             />
@@ -34,8 +34,8 @@ function TitleInput() {
 
 function Title() {
   return (
-    <TooltipProvider delayDuration={0}>
-      <Tooltip>
+    <TooltipProvider>
+      <Tooltip delayDuration={0}>
         <TooltipTrigger asChild>
           <div className="max-w-64">
             <h1 className="truncate font-bold">[SUP] Processo de Gerenciamento de Suporte</h1>

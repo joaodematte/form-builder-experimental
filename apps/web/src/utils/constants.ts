@@ -19,10 +19,10 @@ export const MIN_WIDTH: Record<string, number> = {
 export const SIDEBAR_DATA = [
   {
     id: 'eform_lsss',
-    w: 4,
+    w: 3,
     h: 1,
     config: {
-      label: 'Campo LSSS',
+      label: 'Campo LSSSaaaaaaaaaaaaaaaaasdasdasdasdasd',
       kind: 'lsss',
       editable: false,
       required: false,
@@ -31,7 +31,7 @@ export const SIDEBAR_DATA = [
   },
   {
     id: 'campo_inteiro',
-    w: 4,
+    w: 1,
     h: 1,
     config: {
       label: 'Campo Inteiro',
@@ -43,7 +43,7 @@ export const SIDEBAR_DATA = [
   },
   {
     id: 'campo_decimal',
-    w: 4,
+    w: 2,
     h: 1,
     config: {
       label: 'Campo Decimal',
@@ -55,7 +55,7 @@ export const SIDEBAR_DATA = [
   },
   {
     id: 'campo_texto',
-    w: 4,
+    w: 2,
     h: 1,
     config: {
       label: 'Campo Texto',
