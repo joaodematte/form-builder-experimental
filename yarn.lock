@@ -885,16 +885,16 @@ __metadata:
     "@radix-ui/react-slot": "npm:^1.1.2"
     "@radix-ui/react-tooltip": "npm:^1.1.8"
     "@types/node": "npm:^22.13.10"
-    "@types/react": "npm:19.0.10"
-    "@types/react-dom": "npm:19.0.4"
+    "@types/react": "npm:19.1.4"
+    "@types/react-dom": "npm:19.1.5"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
     eslint: "npm:^9.22.0"
     eslint-plugin-react-hooks: "npm:^5.2.0"
     globals: "npm:^16.0.0"
     lucide-react: "npm:^0.511.0"
-    react: "npm:^19.0.0"
-    react-dom: "npm:^19.0.0"
+    react: "npm:^19.1.0"
+    react-dom: "npm:^19.1.0"
     tailwind-merge: "npm:^3.0.2"
     tailwindcss: "npm:^4.0.15"
     tw-animate-css: "npm:^1.2.4"
@@ -1852,16 +1852,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:19.0.4":
-  version: 19.0.4
-  resolution: "@types/react-dom@npm:19.0.4"
-  peerDependencies:
-    "@types/react": ^19.0.0
-  checksum: 10c0/4e71853919b94df9e746a4bd73f8180e9ae13016333ce9c543dcba9f4f4c8fe6e28b038ca6ee61c24e291af8e03ca3bc5ded17c46dee938fcb32d71186fda7a3
-  languageName: node
-  linkType: hard
-
-"@types/react-dom@npm:^19.0.4":
+"@types/react-dom@npm:19.1.5, @types/react-dom@npm:^19.1.5":
   version: 19.1.5
   resolution: "@types/react-dom@npm:19.1.5"
   peerDependencies:
@@ -1870,16 +1861,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:19.0.10":
-  version: 19.0.10
-  resolution: "@types/react@npm:19.0.10"
-  dependencies:
-    csstype: "npm:^3.0.2"
-  checksum: 10c0/41884cca21850c8b2d6578b172ca0ca4fff6021251a68532b19f2031ac23dc5a9222470208065f8d9985d367376047df2f49ece8d927f7d04cdc94922b1eb34b
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^19.0.10":
+"@types/react@npm:19.1.4, @types/react@npm:^19.1.4":
   version: 19.1.4
   resolution: "@types/react@npm:19.1.4"
   dependencies:
@@ -3714,7 +3696,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^19.0.0":
+"react-dom@npm:^19.1.0":
   version: 19.1.0
   resolution: "react-dom@npm:19.1.0"
   dependencies:
@@ -3783,7 +3765,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^19.0.0":
+"react@npm:^19.1.0":
   version: 19.1.0
   resolution: "react@npm:19.1.0"
   checksum: 10c0/530fb9a62237d54137a13d2cfb67a7db6a2156faed43eecc423f4713d9b20c6f2728b026b45e28fcd72e8eadb9e9ed4b089e99f5e295d2f0ad3134251bdd3698
@@ -4414,8 +4396,8 @@ __metadata:
     "@fontsource/arimo": "npm:^5.2.5"
     "@neomind/ui": "npm:*"
     "@tailwindcss/vite": "npm:^4.0.15"
-    "@types/react": "npm:^19.0.10"
-    "@types/react-dom": "npm:^19.0.4"
+    "@types/react": "npm:^19.1.4"
+    "@types/react-dom": "npm:^19.1.5"
     "@vitejs/plugin-react": "npm:^4.3.4"
     babel-plugin-react-compiler: "npm:^19.0.0-beta-3229e95-20250315"
     eslint: "npm:^9.21.0"
@@ -4425,8 +4407,8 @@ __metadata:
     globals: "npm:^15.15.0"
     jotai: "npm:^2.12.2"
     lucide-react: "npm:^0.483.0"
-    react: "npm:^19.0.0"
-    react-dom: "npm:^19.0.0"
+    react: "npm:^19.1.0"
+    react-dom: "npm:^19.1.0"
     tailwindcss: "npm:^4.0.15"
     tw-animate-css: "npm:^1.2.4"
     typescript: "npm:~5.7.2"
