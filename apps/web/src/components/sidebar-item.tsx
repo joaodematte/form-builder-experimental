@@ -1,18 +1,25 @@
 import { useDraggable } from '@dnd-kit/react';
-import { useAtom, useAtomValue } from 'jotai';
+import { useAtomValue } from 'jotai';
 import { Asterisk, Pencil, Plus, X } from 'lucide-react';
 import { useRef, useState } from 'react';
+import { useShallow } from 'zustand/shallow';
 
 import { cn } from '@neomind/ui/cn';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@neomind/ui/tooltip';
 
 import { activeDraggableItemAtom } from '@/atoms/active-draggable-item';
-import { layoutAtom } from '@/atoms/layout';
 import { SidebarItemProps } from '@/atoms/sidebar';
+import { useLayoutStore } from '@/stores/layout';
 import { ItemConfig } from '@/types';
 
 export function SidebarItem({ id, w, h, config }: SidebarItemProps) {
-  const [layout, setLayout] = useAtom(layoutAtom);
+  const { layout, updateLayout } = useLayoutStore(
+    useShallow((state) => ({
+      layout: state.layout,
+      updateLayout: state.updateLayout
+    }))
+  );
+
   const activeDraggableItem = useAtomValue(activeDraggableItemAtom);
 
   const [isTooltipOpen, setIsTooltipOpen] = useState<boolean>(false);
@@ -41,11 +48,11 @@ export function SidebarItem({ id, w, h, config }: SidebarItemProps) {
   });
 
   const onDelete = () => {
-    setLayout(layout.filter((item) => item.id !== id));
+    updateLayout(layout.filter((item) => item.id !== id));
   };
 
   const updateLayoutConfig = (configToUpdate: Partial<ItemConfig>) => {
-    setLayout(
+    updateLayout(
       layout.map((item) => {
         if (item.id !== id) return item;
 

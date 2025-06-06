@@ -1,14 +1,15 @@
 import { useDraggable, useDroppable } from '@dnd-kit/react';
 import { useAtomValue } from 'jotai';
 import { useRef } from 'react';
+import { useShallow } from 'zustand/shallow';
 
 import { cn } from '@neomind/ui/cn';
 
 import { activeDraggableItemAtom } from '@/atoms/active-draggable-item';
-import { Layout, layoutAtom, LayoutItem } from '@/atoms/layout';
 import { EmptyLayout } from '@/components/empty-layout';
 import { useComposedRefs } from '@/hooks/use-composed-ref';
 import { getDroppableItems, getRows } from '@/lib/grid';
+import { Layout, LayoutItem, useLayoutStore } from '@/stores/layout';
 
 const COL_WIDTH = 180;
 const ROW_HEIGHT = 64;
@@ -107,7 +108,7 @@ function DraggableGrid({ layout }: GridProps) {
 }
 
 export function Grid() {
-  const layout = useAtomValue(layoutAtom);
+  const layout = useLayoutStore(useShallow((state) => state.layout));
   const activeDraggableItem = useAtomValue(activeDraggableItemAtom);
 
   const isGridEmpty = layout.length === 0;

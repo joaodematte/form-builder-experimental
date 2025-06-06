@@ -1,11 +1,12 @@
 import { useDragDropMonitor } from '@dnd-kit/react';
-import { useAtom, useSetAtom } from 'jotai';
+import { useSetAtom } from 'jotai';
 import { useRef } from 'react';
+import { useShallow } from 'zustand/shallow';
 
 import { activeDraggableItemAtom } from '@/atoms/active-draggable-item';
-import { layoutAtom, LayoutItem } from '@/atoms/layout';
 import { DragOverlay } from '@/components/drag-overlay';
 import { findItemById } from '@/lib/grid';
+import { LayoutItem, useLayoutStore } from '@/stores/layout';
 import { DraggableData, DroppableData } from '@/types';
 
 interface DragDropWrapperProps {
@@ -13,7 +14,13 @@ interface DragDropWrapperProps {
 }
 
 export function DragDropWrapper({ children }: DragDropWrapperProps) {
-  const [layout, setLayout] = useAtom(layoutAtom);
+  const { layout, updateLayout } = useLayoutStore(
+    useShallow((state) => ({
+      layout: state.layout,
+      updateLayout: state.updateLayout
+    }))
+  );
+
   const setActiveDraggableItem = useSetAtom(activeDraggableItemAtom);
 
   const addedRef = useRef<boolean>(false);
@@ -36,7 +43,7 @@ export function DragDropWrapper({ children }: DragDropWrapperProps) {
 
         const updatedLayout = layout.filter((item) => item.id !== sourceData.id);
 
-        setLayout(updatedLayout);
+        updateLayout(updatedLayout);
 
         addedRef.current = false;
       }
@@ -62,7 +69,7 @@ export function DragDropWrapper({ children }: DragDropWrapperProps) {
           layoutItem.id === item.id ? { ...layoutItem, ...newPosition } : layoutItem
         );
 
-        setLayout(updatedLayout);
+        updateLayout(updatedLayout);
       } else {
         const newItem: LayoutItem = {
           id: sourceData.id,
@@ -75,7 +82,7 @@ export function DragDropWrapper({ children }: DragDropWrapperProps) {
 
         const updatedLayout = [...layout, newItem];
 
-        setLayout(updatedLayout);
+        updateLayout(updatedLayout);
 
         addedRef.current = true;
       }
