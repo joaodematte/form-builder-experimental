@@ -292,109 +292,73 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dnd-kit/abstract@npm:^0.1.12":
-  version: 0.1.12
-  resolution: "@dnd-kit/abstract@npm:0.1.12"
+"@dnd-kit/abstract@npm:^0.1.18":
+  version: 0.1.18
+  resolution: "@dnd-kit/abstract@npm:0.1.18"
   dependencies:
-    "@dnd-kit/geometry": "npm:^0.1.12"
-    "@dnd-kit/state": "npm:^0.1.12"
+    "@dnd-kit/geometry": "npm:^0.1.18"
+    "@dnd-kit/state": "npm:^0.1.18"
     tslib: "npm:^2.6.2"
-  checksum: 10c0/fa7ba87b5ba935ef349d3e07872971bb2e0eabf3d21603f2eb3b568b95379204f13180cd36ee0ca9476539b6dd794e72ecbb033c8eb092a148b80c1702acc80e
+  checksum: 10c0/d98fdf3e5f86618db9476c87127b572419d6ec986a41d12d392af490b637517778cd96473b95057e7232e70f5b4021aeae3e4210a229bc6f6ca48268b028184f
   languageName: node
   linkType: hard
 
-"@dnd-kit/accessibility@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "@dnd-kit/accessibility@npm:3.1.1"
+"@dnd-kit/collision@npm:^0.1.18":
+  version: 0.1.18
+  resolution: "@dnd-kit/collision@npm:0.1.18"
   dependencies:
-    tslib: "npm:^2.0.0"
-  peerDependencies:
-    react: ">=16.8.0"
-  checksum: 10c0/be0bf41716dc58f9386bc36906ec1ce72b7b42b6d1d0e631d347afe9bd8714a829bd6f58a346dd089b1519e93918ae2f94497411a61a4f5e4d9247c6cfd1fef8
-  languageName: node
-  linkType: hard
-
-"@dnd-kit/collision@npm:^0.1.12":
-  version: 0.1.12
-  resolution: "@dnd-kit/collision@npm:0.1.12"
-  dependencies:
-    "@dnd-kit/abstract": "npm:^0.1.12"
-    "@dnd-kit/geometry": "npm:^0.1.12"
+    "@dnd-kit/abstract": "npm:^0.1.18"
+    "@dnd-kit/geometry": "npm:^0.1.18"
     tslib: "npm:^2.6.2"
-  checksum: 10c0/9642fb3866e96c9da20431cd1e75f7e3c7f671ae69388301dac5dbf7665110ec7e7910cdc7f11efb70e989a868a78114c2dcb7ee75f1b21073642480c01e18b5
+  checksum: 10c0/efa588a6a0b15bcb385a302a755ffe5f9ebf30d2a176ab7d81c2dca5e931adc052221cd3cf04a8ca0b76127cd9580f8b21f7c3dd03747859f51b4216345afcd2
   languageName: node
   linkType: hard
 
-"@dnd-kit/core@npm:^6.3.1":
-  version: 6.3.1
-  resolution: "@dnd-kit/core@npm:6.3.1"
+"@dnd-kit/dom@npm:^0.1.18":
+  version: 0.1.18
+  resolution: "@dnd-kit/dom@npm:0.1.18"
   dependencies:
-    "@dnd-kit/accessibility": "npm:^3.1.1"
-    "@dnd-kit/utilities": "npm:^3.2.2"
-    tslib: "npm:^2.0.0"
-  peerDependencies:
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: 10c0/196db95d81096d9dc248983533eab91ba83591770fa5c894b1ac776f42af0d99522b3fd5bb3923411470e4733fcfa103e6ee17adc17b9b7eb54c7fbec5ff7c52
-  languageName: node
-  linkType: hard
-
-"@dnd-kit/dom@npm:^0.1.12":
-  version: 0.1.12
-  resolution: "@dnd-kit/dom@npm:0.1.12"
-  dependencies:
-    "@dnd-kit/abstract": "npm:^0.1.12"
-    "@dnd-kit/collision": "npm:^0.1.12"
-    "@dnd-kit/geometry": "npm:^0.1.12"
-    "@dnd-kit/state": "npm:^0.1.12"
+    "@dnd-kit/abstract": "npm:^0.1.18"
+    "@dnd-kit/collision": "npm:^0.1.18"
+    "@dnd-kit/geometry": "npm:^0.1.18"
+    "@dnd-kit/state": "npm:^0.1.18"
     tslib: "npm:^2.6.2"
-  checksum: 10c0/411d387598fd7a824643373d4de5e0089fad68e8697d54a737866cfabf971d466d0b049ba8bd0ef044d11aa24e27594bbf2b0318dfa7bff5b010876ab7935d4b
+  checksum: 10c0/1aea6bd5135f35ef7927ab7c9e7ab7bff5695b869ef92e050246830fcbb5cc52543f833f8b30d4e1d811aa15d6177a9c8a151a1e24510e37a7808843a69cb646
   languageName: node
   linkType: hard
 
-"@dnd-kit/geometry@npm:^0.1.12":
-  version: 0.1.12
-  resolution: "@dnd-kit/geometry@npm:0.1.12"
+"@dnd-kit/geometry@npm:^0.1.18":
+  version: 0.1.18
+  resolution: "@dnd-kit/geometry@npm:0.1.18"
   dependencies:
-    "@dnd-kit/state": "npm:^0.1.12"
+    "@dnd-kit/state": "npm:^0.1.18"
     tslib: "npm:^2.6.2"
-  checksum: 10c0/64bea4867fee267545f52c4b209d651c0ccdf447dfa6025aa5fe409616fa49c238ac9ed550673e4a65502f0dccf9c53fdcf130cda279f046f3f637344c0fb8b6
+  checksum: 10c0/0872d17c730ab841f957889ecdf403187979a22cd86b70c724017007b2f3aee37a97e8cd751add55adb617a5ab6dd6d1829936a3f366f38ee54660d453dad1c6
   languageName: node
   linkType: hard
 
-"@dnd-kit/react@npm:^0.1.12":
-  version: 0.1.12
-  resolution: "@dnd-kit/react@npm:0.1.12"
+"@dnd-kit/react@npm:^0.1.18":
+  version: 0.1.18
+  resolution: "@dnd-kit/react@npm:0.1.18"
   dependencies:
-    "@dnd-kit/abstract": "npm:^0.1.12"
-    "@dnd-kit/dom": "npm:^0.1.12"
-    "@dnd-kit/state": "npm:^0.1.12"
+    "@dnd-kit/abstract": "npm:^0.1.18"
+    "@dnd-kit/dom": "npm:^0.1.18"
+    "@dnd-kit/state": "npm:^0.1.18"
     tslib: "npm:^2.6.2"
   peerDependencies:
     react: ^18.0.0 || ^19.0.0
     react-dom: ^18.0.0 || ^19.0.0
-  checksum: 10c0/ac6914d9c34925e30d0fe0bcf46dff04c8fd550138b8b34ee81e9bf799bc1917cd5300fc2f16f772a3193ffe1ad0692c0edf4e42b000948a65aa95a0c9d6f542
+  checksum: 10c0/1f5504273d0a62d86d8332daf09b63fac8cba5d0d747a442c9a93f81742f34f27d2a87e3dac7e1c42af91287c948d810e3dec4a66d6821ff019e6b95b8d0fd5a
   languageName: node
   linkType: hard
 
-"@dnd-kit/state@npm:^0.1.12":
-  version: 0.1.12
-  resolution: "@dnd-kit/state@npm:0.1.12"
+"@dnd-kit/state@npm:^0.1.18":
+  version: 0.1.18
+  resolution: "@dnd-kit/state@npm:0.1.18"
   dependencies:
     "@preact/signals-core": "npm:^1.8.0"
     tslib: "npm:^2.6.2"
-  checksum: 10c0/fb8e94584a43bf1ecccdf92d26083376a28718670ded1edf4a18c4a7a1be3411723dcab081a3f7c1dc5e2433a7c4651dda3526a803508ca0899549a4e03ae16a
-  languageName: node
-  linkType: hard
-
-"@dnd-kit/utilities@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "@dnd-kit/utilities@npm:3.2.2"
-  dependencies:
-    tslib: "npm:^2.0.0"
-  peerDependencies:
-    react: ">=16.8.0"
-  checksum: 10c0/9aa90526f3e3fd567b5acc1b625a63177b9e8d00e7e50b2bd0e08fa2bf4dba7e19529777e001fdb8f89a7ce69f30b190c8364d390212634e0afdfa8c395e85a0
+  checksum: 10c0/b783e07b7fbe6ddced4a1fd299f96ad5055a19bc60f2747f36636419e0e6646535f83d87edfb3fa95b08c301d8ee1f375a46b6a35a9d21b0d512c1242735cfff
   languageName: node
   linkType: hard
 
@@ -4388,10 +4352,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web@workspace:apps/web"
   dependencies:
-    "@dnd-kit/abstract": "npm:^0.1.12"
-    "@dnd-kit/core": "npm:^6.3.1"
-    "@dnd-kit/dom": "npm:^0.1.12"
-    "@dnd-kit/react": "npm:^0.1.12"
+    "@dnd-kit/abstract": "npm:^0.1.18"
+    "@dnd-kit/dom": "npm:^0.1.18"
+    "@dnd-kit/react": "npm:^0.1.18"
     "@eslint/js": "npm:^9.21.0"
     "@fontsource/arimo": "npm:^5.2.5"
     "@neomind/ui": "npm:*"

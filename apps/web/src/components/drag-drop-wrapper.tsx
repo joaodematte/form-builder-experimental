@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import { activeDraggableItemAtom } from '@/atoms/active-draggable-item';
 import { layoutAtom, LayoutItem } from '@/atoms/layout';
 import { DragOverlay } from '@/components/drag-overlay';
-import { findItemById } from '@/lib/grid';
+import { findItemById, resolveLayout } from '@/lib/grid';
 import { DraggableData, DroppableData } from '@/types';
 
 interface DragDropWrapperProps {
@@ -74,8 +74,9 @@ export function DragDropWrapper({ children }: DragDropWrapperProps) {
         };
 
         const updatedLayout = [...layout, newItem];
+        const updatedLayoutWithoutOverlappingItems = resolveLayout(layout, updatedLayout);
 
-        setLayout(updatedLayout);
+        setLayout(updatedLayoutWithoutOverlappingItems);
 
         addedRef.current = true;
       }
